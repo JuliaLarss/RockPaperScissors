@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julia Larsson">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameBoard">
+        <h1>Ready to play <br> Rock, Paper, Scissors?</h1>
+        <h2 id="cta">Pick you weapon!</h2>
+        <div id="gameContainer">
+            <div id="btnContainer">
+                <div id="rock" class="button">
+                    <img src="stone.png" alt="Rock" />
+                </div>
+                <div id="paper" class="button">
+                    <img src="airplane.png" alt="Paper" />
+                </div>
+                <div id="scissors" class="button">
+                    <img src="scissors.png" alt="Scissors" />
+                </div>
+            </div>
+            <div id="scoreLabel">
+                <p class="label">you</p>
+                <p class="label">computer</p>
+            </div>
+            <div id="scoreContainer">
+                <div id="playerScore" class="score">0</div>
+                <div id="computerScore" class="score">0</div>
+            </div>
+            <div id="resultContainer"></div>
+        </div>
+        <div id="end" class="disappear">
+            <div id="endDesc"></div>
+            <a id="retryBtn"></a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

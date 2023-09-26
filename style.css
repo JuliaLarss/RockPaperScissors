@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    border-radius: 3rem;
+    background: linear-gradient(#eab3b3, #df9292);
+}
+
+h1{
+    margin: 4rem 1rem;
+    font-size: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:azure;
+    text-align: center;
+}
+#cta{
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2rem 6rem 1rem 6rem;
+    border-bottom: 1px solid #6a6565;
+}
+#btnContainer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    background: #eab3b3;
+    margin: 2rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 1px;
+    filter: brightness(1.1);
+}
+.button img{
+    width: 80px;
+}
+#scoreLabel,
+#scoreContainer{
+    display: flex;
+    justify-content: center;
+}
+.label{
+    font-size: 40px;
+    padding: 0 20px;
+    text-transform: capitalize;
+    color: rgb(38, 80, 117);
+}
+.score{
+    font-size: 80px;
+    margin: 0 4rem;
+}
+
+#resultContainer{
+    margin-top: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
+    font-size: 22px;
+}
+#end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+#endDesc{
+    font-size: 40px;
+}
+
+#retryBtn{
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    background: #eab3b3;
+    margin: 3rem 0 0 0;
+    padding: 0.5em 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+#retryBtn:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+    transform: scale(1.1);
+}
+.disappear{
+    display: none;
+}
